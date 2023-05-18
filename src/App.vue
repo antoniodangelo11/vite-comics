@@ -8,8 +8,8 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-  }
-}
+  },
+};
 </script>
 
 <template>
@@ -26,4 +26,6 @@ export default {
   </footer>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+@use './assets/styles/general.scss' as *;
+</style>
