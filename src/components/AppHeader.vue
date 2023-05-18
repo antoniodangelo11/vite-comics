@@ -41,6 +41,12 @@ ul {
     gap: 1rem;
     display: flex;
     color: rgb(0, 0, 0);
+
+    li {
+        font-size: .7rem;
+        font-weight: bold;
+        padding-inline: .5rem;
+    }
 }
 
 img {

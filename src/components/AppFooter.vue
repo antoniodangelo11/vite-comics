@@ -131,7 +131,20 @@
             </div>
         </section>
         <section class="footer_bot">
-            <div class="socials"></div>
+            <div class="socials">
+
+                <button>SIGN-UP NOW!</button>
+
+
+                <div>
+                    <h3>FOLLOW US</h3>
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                    <img src="../assets/img/footer-twitter.png" alt="">
+                    <img src="../assets/img/footer-youtube.png" alt="">
+                    <img src="../assets/img/footer-pinterest.png" alt="">
+                    <img src="../assets/img/footer-periscope.png" alt="">
+                </div>
+            </div>
         </section>
     </footer>
 </template>
@@ -154,15 +167,17 @@
     div {
         display: flex;
         align-items: center;
+        padding-inline: 1.5rem;
 
         img {
             width: 40px;
         }
 
         p {
-            padding-inline: 1.5rem;
             color: rgb(255, 255, 255);
             white-space: nowrap;
+            padding-inline: 1.2rem;
+            font-size: .9rem;
         }
     }
 
@@ -181,7 +196,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 23rem;
+    height: 23.2rem;
 
     div {
         display: flex;
@@ -194,7 +209,7 @@
     }
 
     .title {
-        color: white;
+        color: rgb(255, 255, 255);
         margin-bottom: .5rem;
         margin-top: .5rem;
         font-weight: bold;
@@ -213,6 +228,35 @@
 
 .footer_bot {
     background-color: rgb(48, 48, 48);
+}
+
+
+.socials {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 8rem;
+
+
+    button {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(12, 119, 234);
+        padding: .7rem;
+        font-size: 1rem;
+    }
+
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        h3 {
+            color: rgb(12, 119, 234);
+        }
+    }
 }
 </style>

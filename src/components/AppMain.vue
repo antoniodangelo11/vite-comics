@@ -2,7 +2,7 @@
 
 <template>
     <main>
-        <div>QUA VA IL CONTENUTO</div>
+        <div>QUi VA IL CONTENUTO</div>
     </main>
 </template>
 
@@ -21,6 +21,6 @@ div {
     height: 120px;
     max-width: 1200px;
     color: rgb(255, 255, 255);
-    height: 4rem;
+    height: 10rem;
 }
 </style>
