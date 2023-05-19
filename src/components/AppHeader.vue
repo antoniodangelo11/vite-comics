@@ -1,22 +1,67 @@
-<script></script>
+<script>
+import NavMenu from './NavMenu.vue';
+
+export default {
+    data() {
+        return {
+            arrMenu: [
+                {
+                    "title": "CHARACTERS",
+                    "link": "#",
+                },
+                {
+                    "title": "COMICS",
+                    "link": "#",
+                },
+                {
+                    "title": "MOVIES",
+                    "link": "#",
+                },
+                {
+                    "title": "TV",
+                    "link": "#",
+                },
+                {
+                    "title": "GAMES",
+                    "link": "#",
+                },
+                {
+                    "title": "COLLECTIBLES",
+                    "link": "#",
+                },
+                {
+                    "title": "VIDEOS",
+                    "link": "#",
+                },
+                {
+                    "title": "FANS",
+                    "link": "#",
+                },
+                {
+                    "title": "NEWS",
+                    "link": "#",
+                },
+                {
+                    "title": "SHOP",
+                    "link": "#",
+                }
+            ],
+        };
+    },
+    components: {
+        NavMenu,
+    }
+}
+</script>
 
 <template>
     <header>
-        <nav>
+        <div class="container">
             <img class="logo" src="../assets/img/dc-logo.png" alt="">
             <ul>
-                <li>CHARACTERS</li>
-                <li>COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <NavMenu v-for="element in arrMenu" :key="element.title" :title="element.title" :link="element.link" />
             </ul>
-        </nav>
+        </div>
     </header>
     <div class="jumbotron"></div>
 </template>
@@ -26,36 +71,28 @@
 
 header {
     background-color: rgb(255, 255, 255);
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-        height: 120px;
-        max-width: 1200px;
-
-        .logo {
-            margin-top: 1rem;
-            height: 80px;
-        }
-
-        ul {
-            list-style: none;
-            align-items: center;
-            gap: 1rem;
-            display: flex;
-            color: rgb(0, 0, 0);
-
-            li {
-                font-size: .7rem;
-                font-weight: bold;
-                padding-inline: .5rem;
-            }
-        }
-    }
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    height: 120px;
+}
 
+ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    height: 80px;
+}
 
 .jumbotron {
     background-image: url(../assets/img/jumbotron.jpg);

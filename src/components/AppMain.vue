@@ -100,14 +100,13 @@ export default {
 
 main {
     background-color: rgb(48, 48, 48);
+    padding: 3rem;
+}
 
-    .container {
-        max-width: 1200px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 </style>
