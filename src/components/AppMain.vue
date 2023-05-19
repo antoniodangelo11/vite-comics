@@ -114,7 +114,7 @@ main {
 .btn_load {
     padding: 0.5rem;
     padding-inline: 2.5rem;
-    font-weight: 600;
+    font-weight: 700;
     color: rgb(255, 255, 255);
     background-color: rgb(12, 119, 234);
     margin: 3rem;

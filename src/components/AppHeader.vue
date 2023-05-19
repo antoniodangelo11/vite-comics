@@ -63,7 +63,9 @@ export default {
             </ul>
         </div>
     </header>
-    <div class="jumbotron"></div>
+    <div class="jumbotron">
+        <button class="btn_head"><a href="">CURRENT SERIES</a></button>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -97,5 +99,24 @@ ul {
 .jumbotron {
     background-image: url(../assets/img/jumbotron.jpg);
     height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.btn_head {
+    position: absolute;
+    left: 30.5rem;
+    bottom: -1.7rem;
+    padding: 1rem;
+    background-color: rgb(12, 119, 234);
+    border: 0;
+    box-shadow: 5px 10;
+
+    a {
+        font-weight: 700;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
 }
 </style>
