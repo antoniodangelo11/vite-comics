@@ -9,19 +9,23 @@ export default {
 
 <template>
     <div class="card">
-        <img :src="urlImg" :alt="series">
-        <h2>{{ title }}</h2>
+        <img :src="urlImg" :alt="title">
+        <p>{{ title }}</p>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .card {
-    max-width: 200px;
-    text-align: center;
-    border: 2px solid black;
-}
+    width: 15%;
+    background-color: transparent;
+    border: none;
 
-img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
+
+    p {
+        color: white;
+    }
 }
 </style>

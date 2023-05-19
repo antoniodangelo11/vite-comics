@@ -200,7 +200,6 @@
 
     div {
         display: flex;
-        gap: 1.5rem;
 
         .column {
             display: flex;
