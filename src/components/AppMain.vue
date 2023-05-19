@@ -91,6 +91,7 @@ export default {
         <div class="container">
             <CardComic v-for="card in arrComics" :key="card.series" :urlImg="card.thumb" :title="card.series"
                 :price="card.price" />
+            <button class="btn_load">LOAD MORE</button>
         </div>
     </main>
 </template>
@@ -108,5 +109,15 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.btn_load {
+    padding: 0.5rem;
+    padding-inline: 2.5rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 119, 234);
+    margin: 3rem;
+    border: 0;
 }
 </style>
