@@ -89,7 +89,8 @@ export default {
 <template>
     <main>
         <div class="container">
-            <CardComic v-for="card in arrComics" :key="card.series" :urlImg="card.thumb" :title="card.series" />
+            <CardComic v-for="card in arrComics" :key="card.series" :urlImg="card.thumb" :title="card.series"
+                :price="card.price" />
         </div>
     </main>
 </template>
@@ -108,7 +109,5 @@ main {
         align-items: center;
         gap: 1rem;
     }
-
-
 }
 </style>

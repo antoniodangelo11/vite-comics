@@ -3,6 +3,7 @@ export default {
     props: {
         urlImg: String,
         title: String,
+        price: String,
     },
 };
 </script>
@@ -11,6 +12,7 @@ export default {
     <div class="card">
         <img :src="urlImg" :alt="title">
         <p>{{ title }}</p>
+        <p>{{ price }}</p>
     </div>
 </template>
 
