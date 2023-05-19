@@ -15,7 +15,6 @@ export default {
         </div>
         <div class="text_container">
             <p>{{ title }}</p>
-            <p>{{ price }}</p>
         </div>
     </div>
 </template>

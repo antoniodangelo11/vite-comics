@@ -88,6 +88,7 @@ ul {
     list-style: none;
     align-items: center;
     display: flex;
+    position: relative;
     gap: 1rem;
     color: rgb(0, 0, 0);
 }

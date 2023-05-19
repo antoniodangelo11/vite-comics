@@ -117,7 +117,7 @@ main {
     font-weight: 700;
     color: rgb(255, 255, 255);
     background-color: rgb(12, 119, 234);
-    margin: 3rem;
+    margin: 2rem;
     border: 0;
 }
 </style>
