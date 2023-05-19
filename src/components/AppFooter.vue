@@ -256,6 +256,7 @@
 
         h3 {
             color: rgb(12, 119, 234);
+            font-size: 20px;
         }
     }
 }

@@ -28,4 +28,5 @@ export default {
 
 <style lang="scss">
 @use './assets/styles/general.scss' as *;
+@import "../node_modules/bootstrap/scss/bootstrap";
 </style>
