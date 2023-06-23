@@ -24,6 +24,7 @@ export default {
     width: calc((100% / 6) - 1rem);
     margin: 2.5rem .5rem;
     border: none;
+}
 
     .img_container {
         width: 100%;
@@ -36,7 +37,6 @@ export default {
             object-fit: cover;
         }
     }
-}
 
 .text_container {
     color: rgb(255, 255, 255);
